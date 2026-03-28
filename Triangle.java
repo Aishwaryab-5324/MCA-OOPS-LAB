@@ -1,16 +1,16 @@
 package graphics;
 import java.util.Scanner;
-public class Rectangle implements Area_cal
+public class Triangle implements Area_cal
 {
-    int l,b;
+    int b,h;
     public void area()    
     {
         Scanner sc=new Scanner(System.in);
-        System.out.println("Input length");
-        l=sc.nextInt();
         System.out.println("Input breadth");
         b=sc.nextInt();
-        System.out.println("Area of rectangle:"+(l*b));
+        System.out.println("Input length");
+        h=sc.nextInt();
+        System.out.println("Area of triangle:"+(0.5*b*h));
         sc.close();
     }
 }
